@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .column {
+            flex: 25%;
+            padding: 10px;
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (max-width: 768px) {
+            .column {
+                flex: 50%;
+
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <h1>HTML</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ut? Accusamus porro unde explicabo sit!</p>
+        </div>
+        <div class="column">
+            <h1>CSS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ut? Accusamus porro unde explicabo sit!.</p>
+        </div>
+        <div class="column">
+            <h1>JS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ut? Accusamus porro unde explicabo sit!</p>
+        </div>
+        <div class="column">
+            <h1>Python</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ut? Accusamus porro unde explicabo sit!</p>
+        </div>
+    </div>
+</body>
+
+</html>

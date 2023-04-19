@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İframe</title>
+
+    <style>
+        div{
+            height: 100px;
+            width: 250px;
+            color: white;
+            background-color: rgb(206, 18, 18);
+            border: 1px solid black;
+            /* overflow : visible (default), hidden, scroll, auto */
+            overflow: auto;
+        }
+
+        .frame{
+            position: relative;
+        }
+
+        .frame .frame-text{
+            visibility: hidden;
+            width: 150px;
+            background-color: rgb(68, 161, 118);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+        
+        }
+
+        .frame:hover .frame-text{
+            visibility: visible;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <a href="#" class="frame">
+        Instagram
+        <span class="frame-text">Instagram Etkileşim Aracı</span>
+    </a>
+
+    <br> <br>
+    
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam corporis minima quasi accusamus voluptate similique culpa, mollitia temporibus modi in nam, quae dolores error voluptatibus repellat sint eveniet! Illo, omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi, perspiciatis quisquam repellat ipsa iusto temporibus provident culpa, veniam eligendi at. Minus illo dicta quaerat impedit similique alias vel incidunt?
+
+    </div>
+
+
+</body>
+</html>

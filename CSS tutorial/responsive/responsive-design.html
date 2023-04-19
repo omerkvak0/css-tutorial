@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Site</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        .header {
+            background-color: coral;
+            color: white;
+            padding: 1% 5%;
+            text-align: center;
+        }
+
+        .nav-menu {
+            padding: 1% 5%;
+            background-color: #39a4ac;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            display: block;
+        }
+
+        .main {
+            padding: 1% 5%;
+            background-color: turquoise;
+
+        }
+
+        .aside {
+            padding: 1% 5%;
+            background-color: #39a4ac;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        }
+
+        .row::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+
+            .nav-menu a {
+                text-align: center;
+                background-color: rgb(80, 220, 255);
+                margin: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Lorem ipsum, dolor sit amet.</h1>
+    </div>
+
+    <div class="row">
+        <div class="nav-menu col-2">
+            <a href="#">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="main col-7">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero fuga autem eligendi, iste nihil at sint fugiat id, voluptatibus ex vel quis nostrum natus molestias laudantium eum possimus. Cupiditate?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sit assumenda enim architecto. Enim, dolores voluptatem laudantium repellendus accusantium molestiae modi reprehenderit delectus doloremque nulla maiores quibusdam tenetur a ab quasi quia et cumque, natus, quae optio error dignissimos adipisci quidem reiciendis. Vitae quas culpa esse vero sed blanditiis reiciendis officiis temporibus, saepe molestiae repudiandae excepturi harum commodi, consequuntur voluptatem fugit exercitationem magnam aperiam eius inventore! Ut aperiam labore eius tempora aliquid rem blanditiis, accusantium dolor aliquam quaerat eos modi animi saepe doloribus ullam accusamus sint nihil corrupti laudantium dolores quod minus! Quam maiores aspernatur repudiandae ab excepturi dolore aliquam provident voluptatem animi culpa expedita, voluptas perspiciatis eveniet, nulla cum aliquid delectus, minima et molestiae. Quia temporibus explicabo blanditiis velit laborum dolor nisi enim. Dignissimos, eius magnam? Modi sint nihil aut dolores dicta asperiores nesciunt similique maiores nobis corrupti inventore voluptatibus, exercitationem assumenda ipsa autem quaerat est dolorem necessitatibus harum itaque sunt temporibus. Quae aliquid dolorum, debitis itaque, maiores labore, reprehenderit totam asperiores fugit illum cumque! Quo, quas ipsa officiis tempora eum pariatur debitis consequatur dignissimos voluptatibus eveniet fugiat mollitia iusto sit totam. Officia necessitatibus iusto dolore voluptatum voluptate, quo, beatae molestias nulla qui quas mollitia veritatis voluptatem amet non!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sit assumenda enim architecto. Enim, dolores voluptatem laudantium repellendus accusantium molestiae modi reprehenderit delectus doloremque nulla maiores quibusdam tenetur a ab quasi quia et cumque, natus, quae optio error dignissimos adipisci quidem reiciendis. Vitae quas culpa esse vero sed blanditiis reiciendis officiis temporibus, saepe molestiae repudiandae excepturi harum commodi, consequuntur voluptatem fugit exercitationem magnam aperiam eius inventore! Ut aperiam labore eius tempora aliquid rem blanditiis, accusantium dolor aliquam quaerat eos modi animi saepe doloribus ullam accusamus sint nihil corrupti laudantium dolores quod minus! Quam maiores aspernatur repudiandae ab excepturi dolore aliquam provident voluptatem animi culpa expedita, voluptas perspiciatis eveniet, nulla cum aliquid delectus, minima et molestiae. Quia temporibus explicabo blanditiis velit laborum dolor nisi enim. Dignissimos, eius magnam? Modi sint nihil aut dolores dicta asperiores nesciunt similique maiores nobis corrupti inventore voluptatibus, exercitationem assumenda ipsa autem quaerat est dolorem necessitatibus harum itaque sunt temporibus. Quae aliquid dolorum, debitis itaque, maiores labore, reprehenderit totam asperiores fugit illum cumque! Quo, quas ipsa officiis tempora eum pariatur debitis consequatur dignissimos voluptatibus eveniet fugiat mollitia iusto sit totam. Officia necessitatibus iusto dolore voluptatum voluptate, quo, beatae molestias nulla qui quas mollitia veritatis voluptatem amet non!</p>
+            
+
+
+        </div>
+
+        <div class="aside col-3">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ut? Accusamus porro unde explicabo sit!</p>
+
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ut? Accusamus porro unde explicabo sit!</p>
+
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ut? Accusamus porro unde explicabo sit!</p>
+
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ut? Accusamus porro unde explicabo sit!</p>
+
+        </div>
+    </div>
+
+    <div class="footer">
+    </div>
+
+</body>
+
+</html>
